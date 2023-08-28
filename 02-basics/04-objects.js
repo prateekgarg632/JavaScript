@@ -33,5 +33,16 @@ let obj3={...obj1,...obj2} // merge two objects with spread operator
 // console.log(user1);
 // console.log(Object.keys(user1)); // used to get keys of an object
 // console.log(Object.values(user1)); // used to get values of an object
-console.log(Object.entries(user1));
-console.log(user1.hasOwnProperty('isloogen'));
+// console.log(Object.entries(user1));
+// console.log(user1.hasOwnProperty('isloogen'));
+
+
+
+const course={
+    coursename:"javascript",
+    courseInstructor:"hitesh",
+    price:500
+}
+
+const {price:p}=course // way to destructure the object is JS
+console.log(p);
