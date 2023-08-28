@@ -22,7 +22,7 @@ JsUser.email="prateek.garg@gmail.com";  // way to change value of an object in J
 // Object.freeze(JsUser);
 
 
-JsUser.email="prateek.garg@gmail.com";  // value will not change
+JsUser.email="prateek.garg@gmail.com";  // value will not change after freezing the object.
 // console.log(JsUser["email"]);
 
 console.log(JsUser);
