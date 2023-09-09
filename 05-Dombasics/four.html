@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="main">
+        <li>JavaScript
+        </li>
+    </ul>
+</body>
+<script>
+    function addlang(languageName){
+        const list=document.createElement('li');
+        list.innerHTML=languageName;
+        const parent=document.querySelector('.main')
+        parent.appendChild(list);
+    }
+    addlang("Python");
+    addoptilang("Java")
+    function addoptilang(langName){
+        const list=document.createElement('li');
+        list.appendChild(document.createTextNode(langName));
+        document.querySelector('.main').appendChild(list)
+    }
+
+    //edit existing element
+   const second= document.querySelector("li:nth-child(2)");
+    const newli=document.createElement('li');
+    newli.innerHTML="golang";
+    second.replaceWith(newli);
+
+    //remove element
+    const last=document.querySelector("li:nth-child(3)");
+    last.remove();
+
+</script>
+</html>
