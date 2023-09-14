@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <title>ctrlKey example</title>
+    <script>
+      function showChar(e) {
+        // console.log('location'+e.location);
+        // console.log(e.timeStamp); used to display the timestamp
+            // console.log(e.screenX);
+            // console.log(e.offsetX);
+            // console.log(e.offsetY);
+            // console.log(e.type); it will tell the event type eg:click,submit
+            // console.log(e.target); 
+            // console.log(e.srcElement);
+            // console.log(e.currentTarget);
+        alert(`Key Pressed: ${e.key}\nCTRL key pressed: ${e.ctrlKey}\n`);
+      }
+    </script>
+  </head>
+  <body onkeypress="showChar(event);">
+    <p>
+      Press any character key, with or without holding down the CTRL key.<br />
+      You can also use the SHIFT key together with the CTRL key.
+    </p>
+  </body>
+</html>
